@@ -185,7 +185,7 @@ bool load_mesh( const char* file_name, GLuint* vao, int* point_count, mat4* bone
   return true;
 }
 
-int main() {
+int main( void ) {
   ( restart_gl_log() );
   ( start_gl() );
   glEnable( GL_DEPTH_TEST );          // enable depth-testing

@@ -73,7 +73,7 @@ bool load_texture( const char* file_name, GLuint* tex ) {
   return true;
 }
 
-int main() {
+int main( void ) {
   restart_gl_log();
   start_gl();
 

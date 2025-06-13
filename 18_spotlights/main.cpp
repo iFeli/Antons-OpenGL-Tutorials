@@ -25,7 +25,7 @@ int g_gl_width       = 640;
 int g_gl_height      = 480;
 GLFWwindow* g_window = NULL;
 
-int main() {
+int main( void ) {
   restart_gl_log();
   start_gl();
   // tell GL to only draw onto a pixel if the shape is closer to the viewer

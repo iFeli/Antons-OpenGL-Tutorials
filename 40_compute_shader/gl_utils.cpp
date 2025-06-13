@@ -100,7 +100,7 @@ layout (location = 0) in vec2 vp;\n                                           \
 layout (location = 1) in vec2 vt;\n                                           \
 out vec2 st;\n                                                                \
 \n                                                                            \
-void main () {\n                                                              \
+void main() {\n                                                              \
   st = vt;\n                                                                  \
   gl_Position = vec4 (vp, 0.0, 1.0);\n                                        \
 }\n";
@@ -112,7 +112,7 @@ in vec2 st;\n                                                                 \
 uniform sampler2D img;\n                                                      \
 out vec4 fc;\n                                                                \
 \n                                                                            \
-void main () {\n                                                              \
+void main() {\n                                                              \
   fc = texture (img, st);\n                                                 \
 }\n";
 

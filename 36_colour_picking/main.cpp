@@ -166,7 +166,7 @@ void draw_picker_colours( mat4 P, mat4 V, mat4 M[3] ) {
 
 int decode_id( int r, int g, int b ) { return b + g * 256 + r * 256 * 256; }
 
-int main() {
+int main( void ) {
   ( restart_gl_log() );
   ( start_gl() );
   /* load a mesh to draw in the main scene */

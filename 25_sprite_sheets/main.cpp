@@ -53,7 +53,7 @@ void create_shaders() {
     "uniform mat4 V, P;"
     "uniform vec2 st_offset;"
     "out vec2 st;"
-    "void main () {"
+    "void main() {"
     "  st = (vp + 1.0) * 0.5;"
     "  st = vec2 (st.s / 2.0 + st_offset.s, st.t / 2.0 + st_offset.t);"
     "  gl_Position = P * V * vec4 (vp.x, -1.0, -vp.y, 1.0);"
@@ -63,7 +63,7 @@ void create_shaders() {
     "in vec2 st;"
     "uniform sampler2D tex;"
     "out vec4 frag_colour;"
-    "void main () {"
+    "void main() {"
     "  frag_colour = texture (tex, st);"
     "}";
   GLuint vs = glCreateShader( GL_VERTEX_SHADER );
@@ -139,7 +139,7 @@ void glfw_framebuffer_size_callback( GLFWwindow* window, int width, int height )
   glViewport( 0, 0, g_viewport_width, g_viewport_height );
 }
 
-int main() {
+int main( void ) {
   // start GL context with helper libraries
   glfwInit();
 

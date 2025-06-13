@@ -117,7 +117,7 @@ mat4 view_mat;
 mat4 proj_mat;
 vec3 cam_pos( 0.0f, 0.0f, 5.0f );
 
-int main() {
+int main( void ) {
   /*--------------------------------START OPENGL--------------------------------*/
   restart_gl_log();
   // start GL context and O/S window using the GLFW helper library

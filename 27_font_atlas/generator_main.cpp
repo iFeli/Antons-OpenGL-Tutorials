@@ -23,7 +23,7 @@
 #define PNG_OUTPUT_IMAGE "atlas.png"
 #define ATLAS_META_FILE "atlas.meta"
 
-int main() {
+int main( void ) {
   // Now we can initialise FreeType
   FT_Library ft;
   if ( FT_Init_FreeType( &ft ) ) {

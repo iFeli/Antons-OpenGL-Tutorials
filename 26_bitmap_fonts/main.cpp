@@ -190,7 +190,7 @@ void create_shaders() {
     "layout (location = 0) in vec2 vp;"
     "layout (location = 1) in vec2 vt;"
     "out vec2 st;"
-    "void main () {"
+    "void main() {"
     "  st = vt;"
     "  gl_Position = vec4 (vp, 0.0, 1.0);"
     "}";
@@ -200,7 +200,7 @@ void create_shaders() {
     "uniform sampler2D tex;"
     "uniform vec4 text_colour;"
     "out vec4 frag_colour;"
-    "void main () {"
+    "void main() {"
     "  frag_colour = texture (tex, st) * text_colour;"
     "}";
   GLuint vs = glCreateShader( GL_VERTEX_SHADER );
@@ -273,7 +273,7 @@ void glfw_framebuffer_size_callback( GLFWwindow* window, int width, int height )
   /* update any perspective matrices used here */
 }
 
-int main() {
+int main( void ) {
   // start GL context with helper libraries
   ( glfwInit() );
 

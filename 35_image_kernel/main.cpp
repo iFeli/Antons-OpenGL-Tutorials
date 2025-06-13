@@ -132,7 +132,7 @@ void load_sphere() {
   glEnableVertexAttribArray( 0 );
 }
 
-int main() {
+int main( void ) {
   ( restart_gl_log() );
   ( start_gl() );
   /* set up framebuffer with texture attachment */

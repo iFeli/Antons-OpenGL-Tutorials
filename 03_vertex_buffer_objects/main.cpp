@@ -24,7 +24,7 @@ int g_gl_width       = 640;
 int g_gl_height      = 480;
 GLFWwindow* g_window = NULL;
 
-int main() {
+int main( void ) {
   restart_gl_log();
   // all the start-up code for GLFW and GLEW is called here
   start_gl();

@@ -125,7 +125,7 @@ void update_perspective() {
   proj_mat     = perspective( fovy, aspect, near, far );
 }
 
-int main() {
+int main( void ) {
   /*--------------------------------START OPENGL--------------------------------*/
   restart_gl_log();
   // start GL context and O/S window using the GLFW helper library
