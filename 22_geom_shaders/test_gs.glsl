@@ -12,7 +12,7 @@ layout (triangle_strip, max_vertices = 4) out;
 in vec3 colour[];
 out vec3 f_colour;
 
-void main () {
+void main() {
 	for(int i = 0; i < gl_in.length (); i++) {
 		// use original point as first point in triangle strip
 		gl_Position = gl_in[i].gl_Position;

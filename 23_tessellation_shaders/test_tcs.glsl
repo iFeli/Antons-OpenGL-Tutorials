@@ -12,7 +12,7 @@ out vec3 evaluationpoint_wor[];
 uniform float tess_fac_inner = 1.0; // controlled by keyboard buttons
 uniform float tess_fac_outer = 4.0; // controlled by keyboard buttons
 
-void main () {
+void main() {
 	evaluationpoint_wor[gl_InvocationID] = controlpoint_wor[gl_InvocationID];
 
 	// Calculate the tessellation levels

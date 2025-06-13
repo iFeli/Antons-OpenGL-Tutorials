@@ -23,7 +23,7 @@ float kernel_weights[] = float[](
 );
 float weights_factor = 1.01238;
 
-void main () {
+void main() {
 	vec2 offset[] = vec2[](
 		vec2 (-pixel_scale.s * 2.0, -pixel_scale.t * 2.0),
 		vec2 (-pixel_scale.s, -pixel_scale.t * 2.0),

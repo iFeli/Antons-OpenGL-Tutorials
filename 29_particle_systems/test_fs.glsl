@@ -7,7 +7,7 @@ out vec4 frag_colour;
 
 vec4 particle_colour = vec4 (0.4, 0.4, 0.8, 0.8); 
 
-void main () {
+void main() {
 	// using point texture coordinates which are pre-defined over the point
 	vec4 texel = texture (tex, gl_PointCoord);
 	frag_colour.a = opacity * texel.a;
