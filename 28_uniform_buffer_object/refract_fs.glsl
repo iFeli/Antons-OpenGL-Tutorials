@@ -12,7 +12,7 @@ layout (std140) uniform cam_block {
 
 out vec4 frag_colour;
 
-void main () {
+void main() {
 	/* reflect ray around normal from eye to surface */
 	vec3 incident_eye = normalize (pos_eye);
 	vec3 normal = normalize (n_eye);

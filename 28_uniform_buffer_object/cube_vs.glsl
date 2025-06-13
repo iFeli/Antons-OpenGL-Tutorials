@@ -11,7 +11,7 @@ layout (std140) uniform cam_block {
 	mat4 V; // not used by cube - it has it's own view matrix cam_R
 };
 
-void main () {
+void main() {
 	texcoords = vp;
 	gl_Position = P * cam_R * vec4 (vp, 1.0);
 }

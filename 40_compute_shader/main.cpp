@@ -11,7 +11,7 @@ const char* compute_shader_str =
 layout (local_size_x = 1, local_size_y = 1) in;\n                             \
 layout (rgba32f, binding = 0) uniform image2D img_output;\n                   \
 \n                                                                            \
-void main () {\n                                                              \
+void main() {\n                                                              \
   vec4 pixel = vec4 (0.0, 0.0, 0.0, 1.0);\n                                   \
   ivec2 pixel_coords = ivec2 (gl_GlobalInvocationID.xy);\n                    \
 \n                                                                            \
@@ -39,7 +39,7 @@ if (bsqmc >= 0.0) {\n                                                         \
   imageStore (img_output, pixel_coords, pixel);\n                             \
 }\n";
 
-int main() {
+int main( void ) {
   ( start_gl() ); // just starts a 4.3 GL context+window
 
   // set up shaders and geometry for full-screen quad

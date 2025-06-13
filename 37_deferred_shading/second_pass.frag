@@ -39,7 +39,7 @@ vec3 phong (in vec3 op_eye, in vec3 n_eye) {
 	return (Id + Is) * atten_factor;
 }
 
-void main () {
+void main() {
 	frag_colour.a = 1.0;
 	
 	vec2 st;

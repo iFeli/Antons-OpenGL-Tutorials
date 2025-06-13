@@ -167,7 +167,7 @@ bool parse_file_into_str( const char* file_name, char* shader_str, int max_len )
   return true;
 }
 
-int main() {
+int main( void ) {
   GLfloat points[] = { 0.0f, 0.5f, 0.0f, 0.5f, -0.5f, 0.0f, -0.5f, -0.5f, 0.0f };
   GLuint vbo;
   GLuint vao;

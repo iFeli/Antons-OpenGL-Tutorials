@@ -235,7 +235,7 @@ void draw_second_pass() {
   }
 }
 
-int main() {
+int main( void ) {
   /* initialise GL context and window */
   ( restart_gl_log() );
   ( start_gl() );

@@ -81,7 +81,7 @@ bool load_texture( const char* file_name, GLuint* tex ) {
   return true;
 }
 
-int main() {
+int main( void ) {
   /*--------------------------------START OPENGL---------------------------*/
   restart_gl_log();
   // start GL context and O/S window using the GLFW helper library

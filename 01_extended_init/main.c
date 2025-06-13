@@ -159,7 +159,7 @@ void _update_fps_counter( GLFWwindow* window ) {
   frame_count++;
 }
 
-int main() {
+int main( void ) {
   GLFWwindow* window;
   const GLubyte* renderer;
   const GLubyte* version;

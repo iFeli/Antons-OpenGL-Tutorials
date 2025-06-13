@@ -69,7 +69,7 @@ GLuint gen_particles() {
   return vao;
 }
 
-int main() {
+int main( void ) {
   restart_gl_log();
   // use GLFW and GLEW to start GL context. see gl_utils.cpp for details
   start_gl();

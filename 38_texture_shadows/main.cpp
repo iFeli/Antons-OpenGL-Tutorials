@@ -219,7 +219,7 @@ void render_shadow_casting() {
 // a world position for each sphere in the scene
 vec3 sphere_pos_wor[] = { vec3( -2.0, 0.0, 0.0 ), vec3( 2.0, 0.0, 0.0 ), vec3( -2.0, 0.0, -2.0 ), vec3( 1.5, 1.0, -1.0 ) };
 
-int main() {
+int main( void ) {
   /*--------------------------------START OPENGL--------------------------------*/
   ( restart_gl_log() );
   /* start GL context and O/S window using the GLFW helper library */

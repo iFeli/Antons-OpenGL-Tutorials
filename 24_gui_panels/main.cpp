@@ -42,17 +42,17 @@ void create_ground_plane_shaders() {
     "in vec2 vp;"
     "uniform mat4 V, P;"
     "out vec2 st;"
-    "void main () {"
-    "  st = (vp + 1.0) * 0.5;"
-    "  gl_Position = P * V * vec4 (10.0 * vp.x, -1.0, 10.0 * -vp.y, 1.0);"
+    "void main() {"
+    "  st = ( vp + 1.0 ) * 0.5;"
+    "  gl_Position = P * V * vec4( 10.0 * vp.x, -1.0, 10.0 * -vp.y, 1.0 );"
     "}";
   const char* gp_fs_str =
     "#version 410\n"
     "in vec2 st;"
     "uniform sampler2D tex;"
     "out vec4 frag_colour;"
-    "void main () {"
-    "  frag_colour = texture (tex, st);"
+    "void main() {"
+    "  frag_colour = texture( tex, st );"
     "}";
   GLuint gp_vs = glCreateShader( GL_VERTEX_SHADER );
   glShaderSource( gp_vs, 1, &gp_vs_str, NULL );
@@ -82,17 +82,17 @@ void create_gui_shaders() {
     "in vec2 vp;"
     "uniform vec2 gui_scale;"
     "out vec2 st;"
-    "void main () {"
-    "  st = (vp + 1.0) * 0.5;"
-    "  gl_Position = vec4 (vp * gui_scale, 0.0, 1.0);"
+    "void main() {"
+    "  st = ( vp + 1.0 ) * 0.5;"
+    "  gl_Position = vec4( vp * gui_scale, 0.0, 1.0 );"
     "}";
   const char* gui_fs_str =
     "#version 410\n"
     "in vec2 st;"
     "uniform sampler2D tex;"
     "out vec4 frag_colour;"
-    "void main () {"
-    "  frag_colour = texture (tex, st);"
+    "void main() {"
+    "  frag_colour = texture( tex, st );"
     "}";
   GLuint gui_vs = glCreateShader( GL_VERTEX_SHADER );
   glShaderSource( gui_vs, 1, &gui_vs_str, NULL );
@@ -160,7 +160,7 @@ void glfw_framebuffer_size_callback( GLFWwindow* window, int width, int height )
   glViewport( 0, 0, g_viewport_width, g_viewport_height );
 }
 
-int main() {
+int main( void ) {
   // start GL context with helper libraries
   ( glfwInit() );
 

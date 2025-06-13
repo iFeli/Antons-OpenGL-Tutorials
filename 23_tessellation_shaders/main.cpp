@@ -26,7 +26,7 @@ int g_gl_height = 480;
 float inner_tess_fac = 1.0;
 float outer_tess_fac = 4.0;
 
-int main() {
+int main( void ) {
   restart_gl_log();
   // start GL context and O/S window using the GLFW helper library
   gl_log( "starting GLFW %s", glfwGetVersionString() );

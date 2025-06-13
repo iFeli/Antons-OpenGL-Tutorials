@@ -202,7 +202,7 @@ void reload_shader_program_from_files( GLuint* program, const char* vertex_shade
   }
 }
 
-int main() {
+int main( void ) {
   if ( !start_opengl() ) { return 1; }
 
   create_geometry();

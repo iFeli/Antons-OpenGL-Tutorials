@@ -66,7 +66,7 @@ void APIENTRY debug_gl_callback( GLenum source, GLuint type, GLenum id, GLsizei 
   fprintf( stderr, "source: %s type: %s id: %u severity: %s length: %i message: %s\n", src_str, type_str, (unsigned int)id, sev_str, length, message );
 }
 
-int main() {
+int main( void ) {
   GLFWwindow* window = NULL;
   const GLubyte* renderer;
   const GLubyte* version;
@@ -80,7 +80,7 @@ int main() {
   const char* vertex_shader =
     "#version 410\n"
     "in vec3 vp;"
-    "void main () {"
+    "void main() {"
     "	gl_Position = vec4 (vp, 1.0);"
     "}";
   /* the fragment shader colours each fragment (pixel-sized area of the
@@ -88,7 +88,7 @@ int main() {
   const char* fragment_shader =
     "#version 410\n"
     "out vec4 frag_colour;"
-    "void main () {"
+    "void main() {"
     "	frag_colour = vec4 (0.5, 0.0, 0.5, 1.0);"
     "}";
   /* GL shader objects for vertex and fragment shader [components] */

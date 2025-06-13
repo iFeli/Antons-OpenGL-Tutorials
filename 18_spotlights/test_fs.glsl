@@ -18,7 +18,7 @@ float specular_exponent = 1000.0; // specular 'power'
 
 out vec4 fragment_colour; // final colour of surface
 
-void main () {
+void main() {
 	// ambient intensity
 	vec3 Ia = La * Ka;
 

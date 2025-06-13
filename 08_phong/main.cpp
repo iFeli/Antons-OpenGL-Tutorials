@@ -28,7 +28,7 @@ int g_gl_width       = 640;
 int g_gl_height      = 480;
 GLFWwindow* g_window = NULL;
 
-int main() {
+int main( void ) {
   restart_gl_log();
   // start GL context and O/S window using the GLFW helper library
   start_gl();
